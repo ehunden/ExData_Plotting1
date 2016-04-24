@@ -19,8 +19,6 @@ with(data, plot(V1,V3, type="l", xlab = "", ylab = "Global Active Power (kilowat
 
 with(data, plot(V1,V5, type="l", xlab = "datetime", ylab = "Voltage"))
 
-dev.off()
-
 
 with(data, plot(V1,V7, type="n", xlab = "", ylab = "Energy Sub Metering"))
 with(data, points(V1,V7, col="black", type="l"))
@@ -30,3 +28,5 @@ legend("topright", lty=1, col = c("black", "red", "blue"),
        legend = c("Sub_Metering_1", "Sub_Metering_2", "Sub_Metering_3"))
 
 with(data, plot(V1,V4, type="l", xlab = "datetime", ylab = "Global_reactive_power"))
+
+dev.off()
